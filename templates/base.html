@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Русский рок</title>
+ </head>
+   <style>
+	body {
+		background: #FFF url('https://imageup.ru/img279/3760212/rusrockhomenew.jpg'); /* Фоновый цвет и фоновый рисунок*/
+		color: #000; /*Цвет текста на странице*/
+		background-attachment: fixed; /* Фон страницы фиксируется */
+		background-size: 100%;
+	}
+   </style>
+  <style type="text/css">
+   A {
+    color: #800000; /* Цвет обычной ссылки */
+   }
+   A:visited {
+    color: red; /* Цвет посещенной ссылки */
+   }
+  </style>
+ <body>
+
+<header>
+  <a href="{% url 'home' %}">Домашняя страница</a> | <a href="{% url 'about' %}">О сайте</a>
+</header>
+
+{% block content %}
+{% endblock content %}

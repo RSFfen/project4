@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1 style="color: red"><b>Домашняя страница</b></h1>
+
+<table border="0" width="100%">
+	<tr>
+		<td width="10%">&nbsp;</td>
+		<td width="80%" bgcolor="#FFFFFF">
+	<p><font size="5" face="Franklin Gothic Heavy">Этот сайт для людей, ничего не слышавших о русском роке, или интересующихся о его происхождении и исполнителях.</font>
+	<ul>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5"><a href="{% url 'korolishut' %}">«Король И Шут»</a></font></li>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5"><a href="{% url 'sektorgaza' %}">«Сектор Газа»</a></font></li>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5"><a href="{% url 'kino' %}">«Кино»</font></a></li>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5"><a href="{% url 'leningrad' %}">«Ленинград»</a></font></li>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5"><a href="{% url 'zveri' %}">«Звери»</a></font></li>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5"><a href="{% url 'splin' %}">«Сплин»</a></font></li>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5"><a href="{% url 'ddt' %}">«ДДТ»</a></font></li>
+		<li>
+		<p style="color: #080808; font-family: Franklin Gothic Heavy; background-color: #ffffff">
+		<font size="5">«Чайф»</font></li>
+	</ul>
+			</td>
+		<td width="10%">&nbsp;</td>
+	</tr>
+</table>
+
+{% endblock content %}
