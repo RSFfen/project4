@@ -8,6 +8,7 @@ from .views import LeningradPageView
 from .views import ZveriPageView
 from .views import SplinPageView
 from .views import DDTPageView
+from .views import CommentCreateView
 
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
@@ -19,4 +20,5 @@ urlpatterns = [
     path('zveri/', ZveriPageView.as_view(), name='zveri'),
     path('splin/', SplinPageView.as_view(), name='splin'),
     path('ddt/', DDTPageView.as_view(), name='ddt'),
+    path('comment_new/', CommentCreateView.as_view(), name='comment_new'),        
 ]
